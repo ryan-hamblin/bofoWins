@@ -10,17 +10,14 @@ Node and Yarn
 
 Copy or clone this to your machine.
 
-Open Terminal and run the following commands:
-
+- open up your terminal and cd into Desktop
+- Then run
 ```console
-mkdir ~/bofoWins
-cd ~/bofoWins
-yarn init
-yarn add puppeteer 
-yarn add node-fetch
+git clone https://github.com/ryan-hamblin/bofoWins.git
 ```
-
-That should download all of the requirements.  You can then run the appliation with:
+- Next: `cd bofo wins`
+- Run: `npm install`
+- You can then run the appliation with:
 
 ```console
 node job.js
