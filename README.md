@@ -15,7 +15,7 @@ Copy or clone this to your machine.
 ```console
 git clone https://github.com/ryan-hamblin/bofoWins.git
 ```
-- Next: `cd bofo wins`
+- Next: `cd bofoWins`
 - Run: `npm install`
 - You can then run the appliation with:
 
