@@ -7,6 +7,13 @@ const voteSelector = 'a.choice-4';
 async function run() {
   const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
+  await page.setRequestInterception(true);
+  page.on('request', request => {
+    if (request.resourceType() === 'image')
+      request.abort();
+    else
+      request.continue();
+  });
   await page.setUserAgent(
     `Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36`
   );
