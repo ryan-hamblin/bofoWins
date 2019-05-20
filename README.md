@@ -49,3 +49,7 @@ Hit `escape` and then type (Don’t just copy and paste.. type it :slightly_smil
 `:wq`
 
 Hit enter and wait for a min to see if a log file appears on your desktop called `voter.log` If it does then your cron job is running and your adding vote to bofo every min. You can delete the log file and watch it reappear a min later too if you’d like. 
+
+## Notes
+
+* The file is set to run every 30 seconds using a JavaScript timeout. This means that using `crontab` the process will start every minute and the thread will sleep for 30 seconds and then run again before stopping. If this is an issue, comment out the `sleepTimeout` function at the bottom of the `job.js` file.

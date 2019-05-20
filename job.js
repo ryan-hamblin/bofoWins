@@ -26,3 +26,9 @@ async function run() {
   await browser.close();
 }
 run();
+
+// Comment/Remove if you don't want it to run after 30 seconds. 
+setTimeout(function(){
+  console.log("Second run!");
+  run();
+}, 30000);

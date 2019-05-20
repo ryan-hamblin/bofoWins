@@ -52,3 +52,9 @@ async function showResults() {
     var mattocksPercentage = (mattocks / totalVotes) * 100;
     console.log("Bofo has "+ bofoPercentage.toFixed(2) + "% of the vote. Mattocks has " + mattocksPercentage.toFixed(2) + "%.");
 }
+
+// Comment/Remove if you don't want it to run after 30 seconds.
+setTimeout(function(){
+  console.log("Second run!");
+  run();
+}, 30000);
